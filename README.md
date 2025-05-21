@@ -45,6 +45,13 @@ For development with auto-reload:
 npm run dev
 ```
 
+5. Run the server permanently on VM:
+```bash
+npm install -g pm2
+pm2 start server.js --name puppeteer-service
+pm2 startup
+pm2 save
+```
 ### Docker Setup
 
 #### Using Docker Compose (Recommended)
